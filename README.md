@@ -10,7 +10,7 @@ Please note that to run the analysis scripts, additional data need to be downloa
 
 - UrbClim temperature and mask data from Copernicus Climate Change Service (https://doi.org/10.24381/cds.c6459d3a)
 - Temperature-mortality relationships (ERF) and minimum mortality temperatures (MMT) from Masselot et al. 2023 (https://doi.org/10.5281/zenodo.7672108) and Haung et al. 2023
-- Daytime/nighttime population from Copernicus Climate Change Service (detailed in E Silva et al. 2020) 
+- Daytime/nighttime population from European Commission’s Joint Research Centre Data Catalog (https://data.jrc.ec.europa.eu/dataset/be02937c-5a08-4732-a24a-03e0a48bdcda) (detailed in E Silva et al. 2020) 
 
 Data generated from the study can be found on Zenodo at 10.5281/zenodo.12515269.
 
