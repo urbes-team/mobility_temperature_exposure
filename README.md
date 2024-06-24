@@ -1,21 +1,15 @@
 # mobility_temperature_exposure
-Online repository for the journal paper Human mobility modulates temperature exposure in European cities
-
-RRfit folder which contains ERFs and MMT of the cities is from Huange et al. (2023), 
-
-
-# Urban heat islands' impact on human mortality risk in European cities
 
 This repository contains core code associated with the paper:
 
-Lin, G. et al. 
+Lin, G. et al. Human mobility modulates temperature exposure in European cities
 
 ## Data required
 
 Please note that to run the analysis scripts, additional data need to be downloaded from their respective sources as listed below:
 
 - UrbClim temperature and mask data from Copernicus Climate Change Service (https://doi.org/10.24381/cds.c6459d3a)
-- Temperature-mortality relationships from Masselot et al. 2023 (https://doi.org/10.5281/zenodo.7672108)
+- Temperature-mortality relationships (ERF) and minimum mortality temperatures (MMT) from Masselot et al. 2023 (https://doi.org/10.5281/zenodo.7672108) and Haung et al. 2023
 - Daytime/nighttime population from Copernicus Climate Change Service (detailed in E Silva et al. 2020) 
 
 Data generated from the study can be found on Zenodo at 10.5281/zenodo.12515269.
