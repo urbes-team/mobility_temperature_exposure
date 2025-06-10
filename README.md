@@ -2,7 +2,7 @@
 
 This repository contains core code associated with the paper:
 
-Lin, G. et al. Human mobility modulates temperature exposure in European cities
+Lin, G. et al. Daily and seasonal human mobility modulates temperature exposure in European cities
 
 ## Data required
 
