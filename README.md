@@ -6,27 +6,21 @@ Lin, G. et al. Daily and seasonal human mobility modulates temperature exposure 
 
 ## Data required
 
-Please note that to run the analysis scripts, additional data need to be downloaded from their respective sources as listed below:
+Please note that to run the analysis scripts, additional data need to be downloaded from Zenodo repository of this project: 10.5281/zenodo.12515269.
 
+The files on Zenodo was processed from the original data sources below:
+## Temperature
 - UrbClim temperature and mask data from Copernicus Climate Change Service (https://doi.org/10.24381/cds.c6459d3a)
+## ERF and MMT 
 - Temperature-mortality relationships (ERF) and minimum mortality temperatures (MMT) from Masselot et al. 2023 (https://doi.org/10.5281/zenodo.7672108) and Haung et al. 2023
+## Population
 - Daytime/nighttime population from European Commission’s Joint Research Centre Data Catalog (https://data.jrc.ec.europa.eu/dataset/be02937c-5a08-4732-a24a-03e0a48bdcda) (detailed in E Silva et al. 2020) 
 
-Data generated from the study can be found on Zenodo at 10.5281/zenodo.12515269.
 
 ## Code organisation
 
-Code in this repository is grouped as described below and are currently designed to be modified and executed individually as needed. Scripts in subsequent groups may be dependent on outputs from a script in the previous group, though the data outputs on Zenodo as specified above (https://doi.org/10.5281/zenodo.12515269) can also be used in place of certain processing steps. Unless otherwise noted, the scripts within each group are not dependent on each other.
-- Files starting with "`00`" are pre-processing scripts. Please note that the bash script `000_prep_data_urbclim.sh` would need to run first to prepare the UrbClim temperature data.
-- Files starting with "`01`" are attribution scripts applying the exposure-response relationships to the temperature data. Two scripts are provided:
-  - `01_attribute.R` is for the best estimate exposure-response relationships and outputs timeseries of spatial maps
-  - `01_attribute_simulations.R` is for the Monte Carlo simulated ensemble and outputs only the timeseries of difference between urban and rural averages
-  - Attribution outputs are in attributable fraction.
-- Files starting with "`02`" are core analysis scripts, translating attributable fractions into attributable deaths, aggregating across age groups, and performing spatial-temporal analyses.
-  - The "base analysis" scripts (`02_base_analysis.py` and `02_base_analysis_simulated.py`) perform aggregations mostly on the temporal dimension, leaving the spatial dimension in the output (if present in the input).
-  - The "timeseries" scripts (`02_urbanrural_avg_timeseries.py` and `02-2_timeseries_temporal_analysis.py`) are spatially aggregated into urban and rural averages, as well as the difference between the two. Note that `02-2_timeseries_temporal_analysis.py` is dependent on the outputs of `02_urbanrural_avg_timeseries.py`.
-- Files starting with "`03`" are additional analysis scripts, providing outputs quoted in the paper. Supplementary tables S4-S11, listing the risks for each city, are outputs of `03_confidence_interval.py`.
-- Files starting with "`Fig`" are used to produce the figures in the main text of the paper, along with any additional associated analyses.
+Code is organized to reproduce per figure (3-6) in Lin et al. 2025
+Fig 1 and 2 can be reproduced with the dataset deposited on Zenodo.
 
 ## References
 
