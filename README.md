@@ -6,9 +6,7 @@ Lin, G. et al. Daily and seasonal human mobility modulates temperature exposure 
 
 ## Data required
 
-Please note that to run the analysis scripts, additional data need to be downloaded from Zenodo repository of this project: 10.5281/zenodo.12515269.
-
-The files on Zenodo was processed from the original data sources below:
+Please note that to run the analysis scripts, additional data need to be downloaded and processed from the files below
 ### Temperature
 - UrbClim temperature and mask data from Copernicus Climate Change Service (https://doi.org/10.24381/cds.c6459d3a)
 ### ERF and MMT 
