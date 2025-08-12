@@ -18,7 +18,7 @@ Please note that to run the analysis scripts, additional data need to be downloa
 ## Code organisation
 
 Code is organized to reproduce per figure (3-6) in Lin et al. 2025
-Fig 1 and 2 can be reproduced with the dataset deposited on Zenodo.
+Fig 1 and 2 can be reproduced with the dataset above.
 
 ## References
 
